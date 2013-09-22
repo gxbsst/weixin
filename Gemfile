@@ -22,6 +22,8 @@ gem 'rake'
 
 gem 'thin'
 
+gem 'rack-weixin'
+
 group :production do
 end
 
@@ -31,7 +33,9 @@ group :development do
   gem 'sinatra-contrib'
 end
 
-group :test do
+group :test do 
+  gem 'rspec', :require => "rspec/core"
+  gem 'rack-test', :require => "rack/test"
   gem 'factory_girl'
   gem 'database_cleaner'
 end

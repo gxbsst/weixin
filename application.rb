@@ -25,6 +25,10 @@ else
   logger = ::Logger.new("/dev/null")
 end
 
+require 'weixin/middleware'
+require 'weixin/model'
+use Weixin::Middleware, 'sidways_weixin_token', '/robot' 
+
 
 # initialize json
 # ActiveSupport::JSON::Encoding.escape_html_entities_in_json = true
