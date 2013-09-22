@@ -1,6 +1,6 @@
 require 'active_support'
 require 'active_record'
-require 'sinatra/activerecord/rake'
+# require 'sinatra/activerecord/rake'
 
 def get_env name, default=nil
   ENV[name] || ENV[name.downcase] || default
