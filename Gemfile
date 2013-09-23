@@ -22,7 +22,7 @@ gem 'rake'
 
 gem 'thin'
 
-gem 'rack-weixin'
+gem 'rack-weixin', :path => 'lib'
 
 group :production do
 end

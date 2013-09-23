@@ -9,7 +9,7 @@ require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 Bundler.require(:default, ENV['RACK_ENV'])
 
 require 'sinatra'
-require 'sinatra/reloader' if development?
+# require 'sinatra/reloader' if development?
 
 # Set project configuration
 require File.expand_path("../application", __FILE__)

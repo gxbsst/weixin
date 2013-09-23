@@ -1,3 +1,4 @@
+require "bundler/capistrano"
 set :deploy_via, :remote_cache
 
 set :application, "wx.sidways.com"
